@@ -42,7 +42,6 @@ export default {
                     'dept': doc.data().dept,
                     'position': doc.data().position
                 }
-                console.log(data.name)
                 this.employees.push(data)
             })
         })
