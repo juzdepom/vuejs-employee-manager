@@ -1,4 +1,4 @@
-import apikey from './apikey';
+import apiKey from './apikey';
 
 //Note: keeping api key separate because am adding this to a public repo
 
