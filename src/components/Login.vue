@@ -26,10 +26,32 @@
 </template>
 
 <script>
+import firebase from 'firebase';
+
 export default {
     name: 'login',
     data: function(){
-        return{};
+        return{
+            email: '',
+            password: '',
+        };
+    },
+    methods: {
+        login: function(e) {
+            e.preventDefault();
+            firebase.auth()
+            .signInWithEmailAndPassword(this.email, this.password)
+            .then(user => {
+                console.log(user)
+                alert(`You are logged in as ${user["user"]["email"]}!`);
+                //change this code from .push() to .go() so that navbar rerenders when we log in
+                this.$router.go({path: this.$router.path});
+            },
+            err => {
+                alert(err.message);
+            })
+
+        }
     }
 }
 </script>

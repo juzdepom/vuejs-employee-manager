@@ -1,9 +1,9 @@
-import apiKey from './apikey';
+import { apiKey } from './apikey';
 
 //Note: keeping api key separate because am adding this to a public repo
 
 export default {
-    apiKey: apiKey,
+    apiKey: "",
     authDomain: "traversy-vuejs-firestore.firebaseapp.com",
     databaseURL: "https://traversy-vuejs-firestore.firebaseio.com",
     projectId: "traversy-vuejs-firestore",

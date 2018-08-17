@@ -26,10 +26,29 @@
 </template>
 
 <script>
+import firebase from 'firebase/app';
+
 export default {
     name: 'register',
     data: function(){
-        return{};
+        return{
+            email: '',
+            password: '',
+        };
+    },
+    methods: {
+        register: function(e) {
+            firebase.auth().createUserWithEmailAndPassword(this.email, this.password)
+            .then(user => {
+                console.log("here is the: ", user.user)
+                // alert(`Account created for ${user.user.email}`);
+                this.$router.go({path: this.$router.path});
+            },
+            err => {
+                alert(err.message);
+            })
+            e.preventDefault();
+        }
     }
 }
 </script>
