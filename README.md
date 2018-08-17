@@ -1,7 +1,7 @@
 # vuejs-employee-manager
 
 > Vue.js & Firestone App based off of [this Traversy Tutorial](https://www.youtube.com/watch?v=sYNjEzcOTOs&index=1&list=PLillGF-RfqbYsOOycB67Raf9dwmL6Y31M)
-> Course notes [here](https://docs.google.com/document/d/1Av1KFk4YSgFQgqhZb-MVm4uuYuVkIHpVpBB3vCIcZYI/edit)
+> Course notes: [Traversy – Vue.js & Firestore App](https://docs.google.com/document/d/1Av1KFk4YSgFQgqhZb-MVm4uuYuVkIHpVpBB3vCIcZYI/edit)
 
 ## Build Setup
 
